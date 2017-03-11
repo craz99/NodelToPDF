@@ -1,0 +1,9 @@
+p There are {{novels.length}} novels
+div(ng-repeat='novel in novels')
+    h3 {{novel.title}}
+    div {{novel.text}}
+    a(href='infoNovel/{{novel._id}}') More
+    |  -
+    a(href='editNovel/{{novel._id}}') Edit
+    |  -
+    a(href='deleteNovel/{{novel._id}}') Delete

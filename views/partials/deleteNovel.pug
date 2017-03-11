@@ -1,0 +1,7 @@
+h2 {{novel.title}}
+div {{novel.text}}
+p
+    | Are you sure you want to delete this novel?
+    button(ng-click='deleteNovel()') Yes
+    |  -
+    button(ng-click='home()') No thanks
